@@ -1,42 +1,168 @@
 <section class="header shadow-xl fixed bg-white w-full top-0 z-20">
-  <div class="container mx-auto h-28 flex items-center">
-    <div class="w-1/3 flex items-center">
-      <img class="mt-2" src="/assets/img/logo-top.svg" alt="hayra logo" />
-      <div class="font-open-sans text-xl font-semibold pl-16">Добро рядом</div>
+  <div
+    class="container mx-auto h-24 lg:h-28 flex items-center xl:justify-between"
+  >
+    <div class="2xl:w-1/3 xl:w-1/4 flex items-center mr-auto">
+      <img
+        class="mt-2 xl:w-auto w-48 lg:auto"
+        src="/assets/img/logo-top.svg"
+        alt="hayra logo"
+      />
+      <div
+        class="
+          font-open-sans
+          text-xl
+          font-semibold
+          2xl:pl-16
+          xl:pl-4
+          xl-block
+          hidden
+          2xl:block
+        "
+      >
+        Добро рядом
+      </div>
     </div>
-    <div class="w-1/3">
-      <div class="flex justify-end">
-        <ul class="flex items-center font-semibold">
+    <div class="3xl:w-1/3">
+      <div class="flex 3xl:justify-end">
+        <ul
+          class="
+            hidden
+            lg:flex
+            flex-col
+            lg:flex-row
+            lg:items-center
+            font-semibold
+          "
+        >
           <li class="mx-4 p-2 hover:text-gold"><a href="#">Кто мы</a></li>
           <li class="mx-4 p-2 hover:text-gold">
             <a href="#">Чем занимаемся</a>
           </li>
-          <li class="mx-4 p-2 hover:text-gold"><a href="#">Контакты</a></li>
+          <li class="mx-4 p-2 hover:text-gold">
+            <a href="#">Контакты</a>
+          </li>
         </ul>
       </div>
     </div>
-    <div class="w-1/3 flex justify-end items-center">
+    <div class="3xl:w-1/3 sm:flex justify-end xl:items-center items-end hidden">
       <a href="#">
-        <div class="flex bg-green-700 hover:bg-gold py-3 pr-4 text-white mr-4">
-          <img class="mr-4" src="/assets/img/hand-left.svg" alt="hand" />
-          Оказать помощь
+        <div
+          class="
+            flex
+            bg-green-700
+            hover:bg-gold
+            py-3
+            xl:pr-4
+            xl:pl-0
+            text-white
+            mr-2
+            sm:px-4
+            pr-2
+            pl-2
+            xl:mr-4
+            text-sm
+            md:text-base
+          "
+        >
+          <img
+            class="mr-4 xl:mr-2 xl:block hidden"
+            src="/assets/img/hand-left.svg"
+            alt="hand"
+          />
+          <span class="hidden sm:block">Оказать помощь</span>
+          <span class="sm:hidden">Помочь</span>
         </div>
       </a>
-      <a class="mr-4" href="#">
-        <div class="flex bg-green-700 text-white hover:bg-gold py-3 pl-4 ml-4">
-          Получить помощь
-          <img class="ml-4" src="/assets/img/hand-right.svg" alt="hand" />
+      <a class="xl:mr-4" href="#">
+        <div
+          class="
+            flex
+            bg-green-700
+            text-white
+            hover:bg-gold
+            py-3
+            px-2
+            sm:px-4
+            ml-2
+            xl:ml-4
+            xl:pr-0
+            text-sm
+            md:text-base
+          "
+        >
+          <span class="hidden sm:block">Получить помощь</span>
+          <span class="sm:hidden">Помогите</span>
+          <img
+            class="ml-4 xl:block hidden"
+            src="/assets/img/hand-right.svg"
+            alt="hand"
+          />
         </div>
       </a>
-      <div class="lang mr-4 ml-8">EN</div>
-      <img class="ml-4" src="/assets/img/search.svg" alt="search" />
+      <div class="hidden lg:hidden xl:flex">
+        <div class="lang mr-4 ml-8">EN</div>
+        <img class="ml-4" src="/assets/img/search.svg" alt="search" />
+      </div>
+    </div>
+
+    <div
+      class="
+        hidden
+        xl:hidden
+        absolute
+        w-72
+        right-0
+        h-screen
+        top-24
+        flex-col
+        bg-green-300
+      "
+      id="navbar-collapse"
+    >
+      <div class="block">
+        <div class="lang mr-4 ml-8">EN</div>
+        <img class="ml-4" src="/assets/img/search.svg" alt="search" />
+      </div>
+
+      <ul class="flex-col mob:flex hidden lg:hidden font-semibold">
+        <li class="mx-4 p-2 hover:text-gold"><a href="#">Кто мы</a></li>
+        <li class="mx-4 p-2 hover:text-gold">
+          <a href="#">Чем занимаемся</a>
+        </li>
+        <li class="mx-4 p-2 hover:text-gold">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <a class="sm:hidden" href="#">
+          <div class="flex bg-green-700 hover:bg-gold text-white py-3 px-4">
+            Оказать помощь
+          </div>
+        </a>
+        <a class="sm:hidden" href="#">
+          <div class="flex bg-green-700 text-white hover:bg-gold py-3 px-4">
+            Получить помощь
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="ml-auto">
+      <button class="xl:hidden pt-4" id="navbar-toggle">
+        <div class="bg-burger bg-no-repeat p-4"></div>
+      </button>
     </div>
   </div>
+
   <div class="container mx-auto">
-    <div class="grid grid-cols-header">
-      <div class="bzz">1</div>
-      <div class="bzz">2</div>
-      <div class="bzz">3</div>
-    </div>
+    <div class="flex sm:hidden">mob</div>
+    <div class="hidden sm:flex md:hidden">sm</div>
+    <div class="hidden md:flex lg:hidden">md</div>
+    <div class="hidden lg:flex xl:hidden">lg</div>
+    <div class="hidden xl:flex 2xl:hidden">xl</div>
+    <div class="hidden 2xl:flex 3xl:hidden">2xl</div>
+    <div class="3xl:flex hidden">3xl</div>
   </div>
 </section>

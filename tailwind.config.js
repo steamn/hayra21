@@ -19,18 +19,16 @@ module.exports = {
       },
       screens: {
         "3xl": "1790px",
+        'mob': '320px'
       },
+
       backgroundImage: theme => ({
         'tree-bg': "url('/assets/img/tree-bg.png')",
+        'burger': "url('/assets/img/burger.svg')"
       })
 
     },
-    gridTemplateColumns: {
 
-      'header': '50px 100px 300px',
-      'footer': '200px minmax(900px, 1fr) 100px',
-
-    }
   },
 
   variants: {
@@ -38,4 +36,3 @@ module.exports = {
   },
   plugins: [],
 };
-
