@@ -12,7 +12,11 @@ toggleBtn.onclick = () => {
 
 
 window.addEventListener('click', function(e){
-  if (!document.getElementById('navbar-toggle').contains(e.target)){
-      collapse.classList.toggle("hidden");
+  if (toggleBtn.contains(e.target)){
+     console.log("asdasd");
+  } else {
+collapse.classList.add("hidden");
   }
 });
+
+
