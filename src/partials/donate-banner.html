@@ -1,23 +1,71 @@
 <section class="donate pb-16">
-  <div class="container mx-auto">
+  <div class="sm:container sm:mx-auto mx-4">
     <div class="relative">
-      <div class="absolute top-40 left-44 text-white">
-        <h2 class="text-5xl uppercase font-bold text-shadow-donate">
+      <div
+        class="
+          sm:absolute
+          lg:top-12
+          sm:top-8
+          sm:left-10
+          top-40
+          lg:left-20
+          xl:left-44
+          2xl:top-32
+          sm:text-white
+        "
+      >
+        <h2
+          class="
+            font-tahoma
+            text-3xl
+            font-bold
+            text-xl
+            sm:text-3xl
+            lg:text-4xl
+            2xl:text-5xl
+            sm:w-3/4
+            lg:w-full
+            font-bold
+            sm:text-shadow-donate
+          "
+        >
           Нам нужна ваша помощь
         </h2>
-        <div class="text-2xl pt-5">
+        <div class="sm:hidden line bg-green-700 h-1 w-20 my-2.5"></div>
+        <div
+          class="
+            sm:text-base
+            lg:text-xl
+            2xl:text-2xl
+            2xl:w-full
+            sm:w-3/4
+            lg:w-4/5
+            lg:my-4
+            sm:pt-5
+            subtitle
+            text-gray-500
+            sm:text-white
+            mb-2
+          "
+        >
           Для реализации проектов нашей организации нужна поддержка
         </div>
         <a href="#">
           <div
             class="
+              absolute
+              mt-6
+              ml-2
               inline-block
-              bg-gold
+              sm:bg-gold
+              bg-white
+              text-gray-800
               py-3
               px-4
-              text-white
-              mt-8
-              text-xl
+              sm:text-white
+              sm:mt-2
+              sm:ml-0
+              sm:text-xl
               hover:bg-white
               hover:text-green-500
               duration-200
@@ -27,8 +75,19 @@
           </div>
         </a>
       </div>
-
-      <img src="/assets/img/donate-banner.jpg" alt="donate" />
+      <div class="bnr-image">
+        <img
+          class="
+            w-full
+            h-72
+            object-cover object-donate-mob
+            lg:object-contain
+            lg:h-auto
+          "
+          src="/assets/img/donate-banner.jpg"
+          alt="donate"
+        />
+      </div>
     </div>
   </div>
 </section>

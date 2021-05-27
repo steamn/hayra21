@@ -25,7 +25,13 @@ module.exports = {
       backgroundImage: theme => ({
         'tree-bg': "url('/assets/img/tree-bg.png')",
         'burger': "url('/assets/img/burger.svg')"
-      })
+      }),
+      objectPosition: {
+        'donate-mob': '67% center',
+        'donate-sm': '75% center',
+
+
+      }
 
     },
 
